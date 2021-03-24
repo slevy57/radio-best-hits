@@ -31,8 +31,7 @@ public class RadioCharts {
         String sql = "SELECT song, MAX(times_aired) " +
                     "FROM music_broadcast " +
                     "GROUP BY song " +
-                    "ORDER BY times_aired DESC " +
-                    "LIMIT 1";
+                    "ORDER BY times_aired DESC ";
 
         return getResult(sql, "song");
     }
